@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIImageView+WBBlurredImage.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) UIImageView *imageView;
 
 @end
 
@@ -17,8 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.imageView = [[UIImageView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:self.imageView];
+    [self.imageView setImageToBlur:[UIImage imageNamed:@"example"]
+                        blurRadius:kWBBlurredImageDefaultBlurRadius
+                   completionBlock:^(){
+                       NSLog(@"The blurred image has been set");
+                   }];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

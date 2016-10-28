@@ -15,6 +15,14 @@
 		73909B681DC31CC000490E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73909B661DC31CC000490E9F /* LaunchScreen.storyboard */; };
 		73909B731DC31CC000490E9F /* WBBlurredImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73909B721DC31CC000490E9F /* WBBlurredImageTests.m */; };
 		73909B7E1DC31CC000490E9F /* WBBlurredImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73909B7D1DC31CC000490E9F /* WBBlurredImageUITests.m */; };
+		73909B8E1DC31D7200490E9F /* UIImage+ImageEffets.m in Sources */ = {isa = PBXBuildFile; fileRef = 73909B8D1DC31D7200490E9F /* UIImage+ImageEffets.m */; };
+		73909B911DC31D8D00490E9F /* UIImageView+WBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 73909B901DC31D8D00490E9F /* UIImageView+WBBlurredImage.m */; };
+		73909B931DC31DE200490E9F /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 73909B921DC31DE200490E9F /* example.png */; };
+		73909B961DC31E0B00490E9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73909B951DC31E0B00490E9F /* CoreGraphics.framework */; };
+		73909B981DC31E1900490E9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73909B971DC31E1900490E9F /* Foundation.framework */; };
+		73909B9A1DC31E2000490E9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73909B991DC31E2000490E9F /* UIKit.framework */; };
+		73909B9C1DC31E2B00490E9F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73909B9B1DC31E2B00490E9F /* CoreImage.framework */; };
+		73909B9E1DC31E3700490E9F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73909B9D1DC31E3700490E9F /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,16 @@
 		73909B791DC31CC000490E9F /* WBBlurredImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBBlurredImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73909B7D1DC31CC000490E9F /* WBBlurredImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBBlurredImageUITests.m; sourceTree = "<group>"; };
 		73909B7F1DC31CC100490E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73909B8C1DC31D7200490E9F /* UIImage+ImageEffets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffets.h"; sourceTree = "<group>"; };
+		73909B8D1DC31D7200490E9F /* UIImage+ImageEffets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffets.m"; sourceTree = "<group>"; };
+		73909B8F1DC31D8D00490E9F /* UIImageView+WBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WBBlurredImage.h"; sourceTree = "<group>"; };
+		73909B901DC31D8D00490E9F /* UIImageView+WBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WBBlurredImage.m"; sourceTree = "<group>"; };
+		73909B921DC31DE200490E9F /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
+		73909B951DC31E0B00490E9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		73909B971DC31E1900490E9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		73909B991DC31E2000490E9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		73909B9B1DC31E2B00490E9F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		73909B9D1DC31E3700490E9F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73909B9E1DC31E3700490E9F /* Accelerate.framework in Frameworks */,
+				73909B9C1DC31E2B00490E9F /* CoreImage.framework in Frameworks */,
+				73909B9A1DC31E2000490E9F /* UIKit.framework in Frameworks */,
+				73909B981DC31E1900490E9F /* Foundation.framework in Frameworks */,
+				73909B961DC31E0B00490E9F /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,7 @@
 				73909B711DC31CC000490E9F /* WBBlurredImageTests */,
 				73909B7C1DC31CC000490E9F /* WBBlurredImageUITests */,
 				73909B561DC31CBF00490E9F /* Products */,
+				73909B941DC31E0B00490E9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +125,8 @@
 		73909B571DC31CBF00490E9F /* WBBlurredImage */ = {
 			isa = PBXGroup;
 			children = (
+				73909B921DC31DE200490E9F /* example.png */,
+				73909B8B1DC31D2600490E9F /* Additions */,
 				73909B5B1DC31CC000490E9F /* AppDelegate.h */,
 				73909B5C1DC31CC000490E9F /* AppDelegate.m */,
 				73909B5E1DC31CC000490E9F /* ViewController.h */,
@@ -138,6 +164,29 @@
 				73909B7F1DC31CC100490E9F /* Info.plist */,
 			);
 			path = WBBlurredImageUITests;
+			sourceTree = "<group>";
+		};
+		73909B8B1DC31D2600490E9F /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				73909B8C1DC31D7200490E9F /* UIImage+ImageEffets.h */,
+				73909B8D1DC31D7200490E9F /* UIImage+ImageEffets.m */,
+				73909B8F1DC31D8D00490E9F /* UIImageView+WBBlurredImage.h */,
+				73909B901DC31D8D00490E9F /* UIImageView+WBBlurredImage.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		73909B941DC31E0B00490E9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73909B9D1DC31E3700490E9F /* Accelerate.framework */,
+				73909B9B1DC31E2B00490E9F /* CoreImage.framework */,
+				73909B991DC31E2000490E9F /* UIKit.framework */,
+				73909B971DC31E1900490E9F /* Foundation.framework */,
+				73909B951DC31E0B00490E9F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +300,7 @@
 			files = (
 				73909B681DC31CC000490E9F /* LaunchScreen.storyboard in Resources */,
 				73909B651DC31CC000490E9F /* Assets.xcassets in Resources */,
+				73909B931DC31DE200490E9F /* example.png in Resources */,
 				73909B631DC31CC000490E9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73909B911DC31D8D00490E9F /* UIImageView+WBBlurredImage.m in Sources */,
+				73909B8E1DC31D7200490E9F /* UIImage+ImageEffets.m in Sources */,
 				73909B601DC31CC000490E9F /* ViewController.m in Sources */,
 				73909B5D1DC31CC000490E9F /* AppDelegate.m in Sources */,
 				73909B5A1DC31CC000490E9F /* main.m in Sources */,
@@ -427,6 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XW6S6GC8TX;
 				INFOPLIST_FILE = WBBlurredImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wubiao.WBBlurredImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XW6S6GC8TX;
 				INFOPLIST_FILE = WBBlurredImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wubiao.WBBlurredImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
